@@ -1,0 +1,15 @@
+[pueue.files]
+pueue = "~/.config/pueue"
+
+[yazi.files]
+yazi = "~/.config/yazi"
+
+[nushell.files]
+nushell = "~/.config/nushell"
+
+[vim.files]
+nvim = "~/.config/nvim"
+
+[shell.files]
+git = "~/.gitconfig"
+

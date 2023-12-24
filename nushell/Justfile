@@ -1,0 +1,13 @@
+set shell := ['nu','-c']
+
+all: zoxide broot starship
+
+zoxide:
+    zoxide init nushell --hook prompt | save -f zoxide.nu
+
+broot:
+    broot --print-shell-function nushell | save -f broot.nu
+
+starship:
+    starship init nu | save -f starship.nu
+    
