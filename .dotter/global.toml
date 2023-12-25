@@ -19,3 +19,8 @@ fish = "~/.config/fish"
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
+[zellij.files]
+zellij = "~/.config/zellij"
+
+[tmux.files]
+tmux = "~/.tmux.conf"
