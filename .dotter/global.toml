@@ -16,3 +16,6 @@ git = "~/.gitconfig"
 [fish.files]
 fish = "~/.config/fish"
 
+[alacritty.files]
+alacritty = "~/.config/alacritty"
+
