@@ -5,6 +5,7 @@
 #unbind-key C-a
 #bind-key C-a send-prefix
 
+#set -g default-shell /usr/bin/nu
 set -g base-index 1
 
 # Easy config reload
