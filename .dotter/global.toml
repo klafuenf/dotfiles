@@ -13,3 +13,6 @@ nvim = "~/.config/nvim"
 [shell.files]
 git = "~/.gitconfig"
 
+[fish.files]
+fish = "~/.config/fish"
+
