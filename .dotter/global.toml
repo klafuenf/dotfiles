@@ -24,3 +24,6 @@ zellij = "~/.config/zellij"
 
 [tmux.files]
 tmux = "~/.tmux.conf"
+
+[wezterm.files]
+wezterm = "~/.wezterm.lua"
