@@ -27,3 +27,6 @@ tmux = "~/.tmux.conf"
 
 [wezterm.files]
 wezterm = "~/.wezterm.lua"
+
+[starship.files]
+starship = "~/.config/starship.toml"
