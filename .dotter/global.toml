@@ -30,3 +30,7 @@ wezterm = "~/.wezterm.lua"
 
 [starship.files]
 starship = "~/.config/starship.toml"
+
+[idea.files]
+ideavimrc = "~/.ideavimrc"
+vimrc = "~/.vimrc"
