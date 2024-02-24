@@ -1,0 +1,33 @@
+import = ["~/.config/alacritty/colors.yml", "~/.config/alacritty/fonts.toml"]
+live_config_reload = true
+
+[cursor]
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[env]
+TERM = "xterm-256color"
+
+[shell]
+program = "/usr/bin/zellij"
+
+[window]
+decorations = "full"
+dynamic_title = true
+opacity = 1.0
+startup_mode = "Windowed"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[window.dimensions]
+columns = 84
+lines = 22
+
+[window.padding]
+x = 2
+y = 2
