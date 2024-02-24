@@ -1,0 +1,7 @@
+packages = ["pueue", "yazi", "nushell", "vim", "gitconfig", "fish", "alacritty", "zellij" , "tmux" , "wezterm", "starship"] 
+
+
+[variables]
+email = ""
+git_username = ""
+
