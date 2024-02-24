@@ -10,7 +10,7 @@ nushell = "~/.config/nushell"
 [vim.files]
 nvim = "~/.config/nvim"
 
-[shell.files]
+[gitconfig.files]
 git = "~/.gitconfig"
 
 [fish.files]
