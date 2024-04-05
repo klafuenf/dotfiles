@@ -34,3 +34,21 @@ starship = "~/.config/starship.toml"
 [idea.files]
 ideavimrc = "~/.ideavimrc"
 vimrc = "~/.vimrc"
+
+[bspwm.files]
+bspwm = "~/.config/bspwm"
+
+[sxhkd.files]
+sxhkd = "~/.config/sxhkd"
+
+[rofi.files]
+rofi = "~/.config/rofi"
+
+[polybar.files]
+polybar = "~/.config/polybar"
+
+[hypr.files]
+hypr = "~/config/hypr"
+
+[kitty.files]
+kitty = "~/.config/kitty"

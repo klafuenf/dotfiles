@@ -5,6 +5,9 @@ if status is-interactive
     broot --print-shell-function fish | source
 end
 
+# Initialisieren von direnv
+eval (direnv hook fish)
+
 #if test -n "$DESKTOP_SESSION"
 #    set -x (gnome-keyring-daemon --start | string split "=")
 #end
