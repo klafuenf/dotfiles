@@ -2,6 +2,7 @@
 [user]
 	email = {{email}}
 	name = {{git_username}}
+{{/if}}
 
 [fetch]
 	prune = true
@@ -14,7 +15,6 @@
 [gui]
 	fontui = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 	fontdiff = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-{{/if}}
 [core]
     {{#if (eq dotter.os "windows")}}
 	symlinks = true
@@ -50,8 +50,9 @@
 	ff = true
 	conflictstyle = diff3
 
-{{#if (is_executable "difft")}}
 [diff]
+    tool = meld
+{{#if (is_executable "difft")}}
     external = "difft"
 {{/if}}
 
