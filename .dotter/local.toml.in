@@ -1,4 +1,22 @@
-packages = ["pueue", "yazi", "nushell", "vim", "gitconfig", "fish", "alacritty", "zellij" , "tmux" , "wezterm", "starship", "bspwm", "sxhkd","rofi","polybar","hypr","kitty" ] 
+packages = [
+"alacritty", 
+"bspwm", 
+"fish", 
+"gitconfig", 
+"hypr",
+"kitty",
+"nushell", 
+"polybar",
+"pueue", 
+"rofi",
+"starship", 
+"sxhkd",
+"tmux" , 
+"vim", 
+"wezterm", 
+"yazi", 
+"zellij" , 
+] 
 
 
 [variables]
