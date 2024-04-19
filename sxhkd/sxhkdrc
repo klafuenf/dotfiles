@@ -173,7 +173,7 @@ super+Print
 
 # Shortcuts
 super + w 
-  firefox
+  firefox-developer-edition
 
 super + n 
   thunar  
