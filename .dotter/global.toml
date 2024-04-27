@@ -52,3 +52,9 @@ hypr = "~/config/hypr"
 
 [kitty.files]
 kitty = "~/.config/kitty"
+
+[i3.files]
+i3 = "~/.config/i3"
+
+[dunst.files]
+dunst = "~/.config/dunst"
