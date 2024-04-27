@@ -1,9 +1,11 @@
 packages = [
 "alacritty", 
 "bspwm", 
+"dunst",
 "fish", 
 "gitconfig", 
 "hypr",
+"i3",
 "kitty",
 "nushell", 
 "polybar",
