@@ -48,7 +48,7 @@ rofi = "~/.config/rofi"
 polybar = "~/.config/polybar"
 
 [hypr.files]
-hypr = "~/config/hypr"
+hypr = "~/.config/hypr"
 
 [kitty.files]
 kitty = "~/.config/kitty"
