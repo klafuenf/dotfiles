@@ -1,2 +1,5 @@
 command_timeout=2000
 username.show_always=true
+[hostname]
+ssh_only=true
+disabled=false
