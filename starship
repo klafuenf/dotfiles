@@ -3,3 +3,6 @@ username.show_always=true
 [hostname]
 ssh_only=true
 disabled=false
+[shell]
+disabled=false
+
