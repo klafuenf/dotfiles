@@ -18,17 +18,16 @@ bspc config gapless_monocle      true
 bspc config pointer_follows_focus true
 bspc config focus_follows_pointer true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
+bspc rule -a Gimp-2.10 desktop='^8' state=floating follow=on
 #bspc rule -a Chromium desktop='^2'
 #bspc rule -a Google-chrome desktop='^2'
-#bspc rule -a firefox desktop='^2'
-bspc rule -a firefox-developer-edition desktop='^2'
+bspc rule -a firefox desktop='^2'
+bspc rule -a firefoxdeveloperedition desktop='^2'
 #bspc rule -a vivaldi-stable desktop='^2'
 bspc rule -a mplayer2 state=floating
 bspc rule -a Yad state=floating
-bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
-bspc rute -a Doublecmd desktop='^3'
+bspc rule -a 'Double Commander' desktop='^3'
 
 #
 # Autostart
@@ -44,11 +43,11 @@ sh ~/.screenlayout/monitor.sh &
 # Wallpaper
 nitrogen --restore &
 # Dex
-#dex -a -s /etc/xdg/autostart/:~/.config/autostart/
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/
 # Picom
-picom -CGb &
+#picom -CGb &
 # Network Applet
 nm-applet --indicator &
 
 # Cursor
-xsetroot -cursor_name left_ptr &
+#xsetroot -cursor_name left_ptr &
