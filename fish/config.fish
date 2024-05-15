@@ -8,8 +8,3 @@ end
 # Initialisieren von direnv
 eval (direnv hook fish)
 
-#if test -n "$DESKTOP_SESSION"
-#    set -x (gnome-keyring-daemon --start | string split "=")
-#end
-
-#export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/gcr/ssh
