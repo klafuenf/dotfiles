@@ -19,6 +19,9 @@ fish = "~/.config/fish"
 [alacritty.files]
 alacritty = "~/.config/alacritty"
 
+[rio.files]
+rio = "~/.config/rio"
+
 [zellij.files]
 zellij = "~/.config/zellij"
 

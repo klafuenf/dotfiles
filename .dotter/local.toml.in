@@ -10,6 +10,7 @@ packages = [
 "nushell", 
 "polybar",
 "pueue", 
+"rio",
 "rofi",
 "starship", 
 "sxhkd",
