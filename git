@@ -1,59 +1,71 @@
 {{#if (and email git_username)}}
 [user]
-	email = {{email}}
-	name = {{git_username}}
+  email = {{email}}
+  name = {{git_username}}
 {{/if}}
 
 [fetch]
-	prune = true
+  prune = true
 [init]
-	defaultBranch = master
+  defaultBranch = master
 [credential]
-	helper = store
+  helper = store
 [pull]
-	ff = only
+  ff = only
 [gui]
-	fontui = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
-	fontdiff = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+  fontui = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+  fontdiff = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
 [core]
-    {{#if (eq dotter.os "windows")}}
-	symlinks = true
-	autocrlf = true
-    {{else}}
-	autocrlf = input
-    {{/if}}
-    {{#if (and (not (is_executable "difft")) (is_executable "delta"))}}
-	pager = delta
-    {{/if}}
+{{#if (eq dotter.os "windows")}}
+  symlinks = true
+  autocrlf = true
+{{else}}
+  autocrlf = input
+{{/if}}
+{{#if (and (not (is_executable "difft")) (is_executable "delta"))}}
+  pager = delta
+{{/if}}
 
 {{#if (and (not (is_executable "difft")) (is_executable "delta"))}}
 [delta]
-    line-numbers = true
-    hunk-header-style = omit
-    syntax-theme = zenburn
-    file-style = bold yellow ul
-    file-decoration-style = none
-    side-by-side = true
+  line-numbers = true
+  hunk-header-style = omit
+  syntax-theme = zenburn
+  file-style = bold yellow ul
+  file-decoration-style = none
+  side-by-side = true
 
 {{/if}}
 [help]
-    autocorrect = 20
+  autocorrect = 20
 
 [alias]
-    changes = "log -M -L"
+  changes = "log -M -L"
 
 [push]
-    autoSetupRemote = true
-
+  autoSetupRemote = true
 
 [merge]
-	ff = true
-	conflictstyle = diff3
+  ff = true
+  conflictstyle = diff3
 
 [diff]
-    tool = meld
-{{#if (is_executable "difft")}}
-    external = "difft"
+{{#if (is_executable "kitty")}}
+  tool = kitty
+  guitool = kitty.gui
+{{else}}
+  tool = meld
+  guitool = meld
 {{/if}}
+{{#if (is_executable "difft")}}
+  external = "difft"
+{{/if}}
+[difftool]
+  prompt = false
+  trustExitCode = true
+[difftool "kitty"]
+  cmd = kitten diff $LOCAL $REMOTE
+[difftool "kitty.gui"]
+  cmd = kitten diff $LOCAL $REMOTE
 
 # vim:ft=gitconfig
