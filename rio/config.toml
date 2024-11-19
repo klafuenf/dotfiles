@@ -102,9 +102,9 @@
 #
 # Whenever the key binding `OpenConfigEditor` is triggered it will
 # use the value of the editor along with the rio configuration path.
-# [editor]
-# program = "vi"
-# args = []
+[editor]
+program = "nvim"
+args = []
 
 # Window configuration
 #
@@ -126,12 +126,12 @@
 # • decorations - Set window decorations, options: "Enabled", "Disabled", "Transparent", "Buttonless"
 #
 # Example:
-# [window]
-# width = 600
-# height = 400
+[window]
+width = 1280
+height = 1024
 # mode = "windowed"
-# opacity = 1.0
-# blur = false
+opacity = 0.8
+blur = true
 # decorations = "enabled"
 
 # Renderer
@@ -270,6 +270,9 @@
 # You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
 # Entries in `shell.args` are passed unmodified as arguments to the shell.
 #
+[shell]
+program = "nu"
+args = []
 # Default:
 #   - (macOS) user login shell
 #   - (Linux/BSD) user login shell
