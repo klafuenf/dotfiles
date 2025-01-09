@@ -130,7 +130,7 @@ args = []
 width = 1280
 height = 1024
 # mode = "windowed"
-opacity = 0.8
+opacity = 0.85
 blur = true
 # decorations = "enabled"
 
