@@ -1,3 +1,3 @@
 function ls
-  exa -g $argv
+  eza -g $argv
 end

@@ -15,8 +15,8 @@ source ( $nu.default-config-dir | path join starship.nu )
 #     $env.config.hooks.env_change.PWD | append (source hooks/direnv/config.nu)
 #)
 
-alias l = exa -ag
-alias ll = exa -lag
+alias l = eza -ag
+alias ll = eza -lag
 alias pnc = sed 's/\x1B\[[0-9;]*[mGK]//g'
 
 def --env lfcd [
