@@ -22,7 +22,7 @@ alias pnc = sed 's/\x1B\[[0-9;]*[mGK]//g'
 def --env lfcd [
   --args (-a): string
 ] {
-  let cmd_file = (^mktemp | str trim)
+  let cmd_file = (mktemp | str trim)
   if ($args | is-empty) {
     ^lf -last-dir-path $cmd_file
   } else {
@@ -34,7 +34,7 @@ def --env lfcd [
 }
 
 def --env brcd [p:string] {
-  let cmd_file = (^mktemp | str trim)
+  let cmd_file = (mktemp | str trim)
   ^broot --only-folders --commands $"($p);:cd" --outcmd $cmd_file
   let cmd = ((open $cmd_file) | str trim)
   rm $cmd_file
@@ -53,7 +53,7 @@ def killn [name: string] {
 }
 
 def --env ya [] {
-    let tmp = (^mktemp | str trim)
+    let tmp = (mktemp | str trim)
     yazi --cwd-file $tmp
     let cwd = ((open $tmp) | str trim)
     cd $cwd
