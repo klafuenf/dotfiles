@@ -7,6 +7,7 @@ packages = [
 "hypr",
 "i3",
 "kitty",
+"niri",
 "nushell", 
 "polybar",
 "pueue", 
