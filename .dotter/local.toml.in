@@ -4,6 +4,7 @@ packages = [
 "dunst",
 "fish", 
 "gitconfig", 
+"helix",
 "hypr",
 "i3",
 "kitty",

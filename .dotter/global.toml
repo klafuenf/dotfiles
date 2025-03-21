@@ -64,3 +64,6 @@ dunst = "~/.config/dunst"
 
 [niri.files]
 niri = "~/.config/niri"
+
+[helix.files]
+helix = "~/.config/helix"
