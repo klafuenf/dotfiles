@@ -1,0 +1,36 @@
+{
+  "modules-center": [
+    "wlr/taskbar"
+  ],
+  "modules-right": [
+    "network",
+    "memory",
+    "clock#date",
+    "clock#time"
+  ],
+  "wlr/taskbar": {
+    "tooltip-format": "{title} | {name} | {app_id}"
+  },
+  "clock#time": {
+    "tooltip": false
+  },
+  "clock#date": {
+    "format": "  {:%e %b %Y}", // Icon: calendar-alt
+    "tooltip": false
+  },
+  "memory": {
+    "interval": 5,
+    "format": "  {}%", // Icon: memory
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
+  },
+  "network": {
+    "interval": 5,
+    "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
+    "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+    "format-disconnected": "⚠  Disconnected",
+    "tooltip-format": "{ifname}: {ipaddr}"
+  }
+}

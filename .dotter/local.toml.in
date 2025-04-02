@@ -18,6 +18,7 @@ packages = [
 "sxhkd",
 "tmux" , 
 "vim", 
+"waybar",
 "wezterm", 
 "yazi", 
 "zellij" , 

@@ -67,3 +67,6 @@ niri = "~/.config/niri"
 
 [helix.files]
 helix = "~/.config/helix"
+
+[waybar.files]
+waybar = "~/.config/waybar"
