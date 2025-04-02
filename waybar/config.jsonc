@@ -9,7 +9,7 @@
     "clock#time"
   ],
   "wlr/taskbar": {
-    "tooltip-format": "{title} | {name} | {app_id}"
+    "tooltip-format": "t:{title} | n:{name} | id:{app_id}"
   },
   "clock#time": {
     "tooltip": false,
