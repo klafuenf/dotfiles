@@ -296,6 +296,13 @@ window-rule {
     default-column-width {}
 }
 
+window-rule {
+    match app-id=r#"^org\.gnome\.Calendar$"#
+    open-floating true
+    default-column-width { fixed 1200; }
+    default-window-height { fixed 600; }
+}
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     // This app-id regular expression will work for both:

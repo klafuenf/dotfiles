@@ -12,15 +12,17 @@
     "tooltip-format": "{title} | {name} | {app_id}"
   },
   "clock#time": {
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "gnome-calendar"
   },
   "clock#date": {
     "format": "  {:%e %b %Y}", // Icon: calendar-alt
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "gnome-calendar"
   },
   "memory": {
     "interval": 5,
-    "format": "  {}%", // Icon: memory
+    "format": "RAM: {}%", // Icon: memory
     "states": {
       "warning": 70,
       "critical": 90
@@ -29,8 +31,9 @@
   "network": {
     "interval": 5,
     "format-wifi": "  {essid} ({signalStrength}%)", // Icon: wifi
-    "format-ethernet": "  {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-    "format-disconnected": "⚠  Disconnected",
-    "tooltip-format": "{ifname}: {ipaddr}"
+    "format-ethernet": "{ifname}: {ipaddr}/{cidr}", // Icon: ethernet
+    "format-disconnected": "Disconnected",
+    "tooltip-format": "{ifname}: {ipaddr}",
+    "on-click": "nm-connection-editor"
   }
 }
