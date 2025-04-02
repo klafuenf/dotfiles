@@ -1,4 +1,17 @@
+[alacritty.files]
+alacritty= "~/AppData/Roaming/alacritty"
+
+[helix.files]
+helix="~/AppData/Roaming/helix"
+
 [nushell.files]
 nushell = "~/AppData/Roaming/nushell"
+
+[vim.files]
+nvim = "~/AppData/Roaming/nvim"
+
 [rio.files]
 rio = "~/AppData/Local/rio"
+
+[yazi.files]
+yazi= "~/AppData/Roaming/yazi"

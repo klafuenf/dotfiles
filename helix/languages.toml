@@ -1,0 +1,9 @@
+[[language]]
+name = "nc840d"
+scope = "source.nc840d"
+file-types = ["spf","mpf"]
+comment-tokens = ";"
+indent = { tab-width = 2, unit = "  "}
+
+[[grammar]]
+source.path = ""

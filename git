@@ -15,13 +15,14 @@
 [gui]
   fontui = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
   fontdiff = -family \"JetBrainsMono Nerd Font\" -size 10 -weight normal -slant roman -underline 0 -overstrike 0
+  encoding = utf-8
 [core]
-{{#if (eq dotter.os "windows")}}
+  filemode = false
   symlinks = true
-  autocrlf = true
-{{else}}
+  filemode = false
+  longpaths = true
+  askpass = 
   autocrlf = input
-{{/if}}
 {{#if (and (not (is_executable "difft")) (is_executable "delta"))}}
   pager = delta
 {{/if}}
@@ -43,12 +44,19 @@
   changes = "log -M -L"
 
 [push]
+  default = simple
   autoSetupRemote = true
 
 [merge]
+{{#if (is_executable "meld")}}
+  tool = meld
+{{/if}}
   ff = true
   conflictstyle = diff3
-
+{{#if (eq dotter.os "windows")}}
+[gpg]
+	program = c:/Program Files (x86)/GnuPG/bin/gpg.exe
+{{/if}}
 [diff]
 {{#if (is_executable "kitty")}}
   tool = kitty
@@ -63,9 +71,24 @@
 [difftool]
   prompt = false
   trustExitCode = true
+{{#if (is_executable "meld")}}
+{{#if (eq dotter.os "windows")}}
+[mergetool "meld"]
+	cmd = \"C:/Program Files (x86)/Meld/Meld.exe\" $BASE $LOCAL $REMOTE --output $MERGED
+[difftool "meld"]
+	cmd = \"C:/Program Files (x86)/Meld/Meld.exe\" $LOCAL $REMOTE 
+{{/if}}
+{{/if}}
+{{#if (is_executable "kitten")}}
 [difftool "kitty"]
   cmd = kitten diff $LOCAL $REMOTE
 [difftool "kitty.gui"]
   cmd = kitten diff $LOCAL $REMOTE
+{{/if}}
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
 
 # vim:ft=gitconfig
