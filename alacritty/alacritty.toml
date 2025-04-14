@@ -10,7 +10,8 @@ shape = "Block"
 TERM = "xterm-256color"
 
 [terminal.shell]
-program = "/usr/bin/zellij"
+#program = "/usr/bin/zellij"
+program = "nu"
 
 [window]
 decorations = "full"
@@ -24,8 +25,57 @@ multiplier = 3
 
 [general]
 live_config_reload = true
-import = ["~/.config/alacritty/colors.toml", "~/.config/alacritty/fonts.toml"]
 
+[colors.bright]
+black = "#000000"
+blue = "#59C2FF"
+cyan = "#95E6CB"
+green = "#C2D94C"
+magenta = "#FFEE99"
+red = "#F07178"
+white = "#FFFFFF"
+yellow = "#FFB454"
+
+[colors.normal]
+black = "#000000"
+blue = "#53BDFA"
+cyan = "#90E1C6"
+green = "#91B362"
+magenta = "#FAE994"
+red = "#ED5F74"
+white = "#C7C7C7"
+yellow = "#F9AF4F"
+
+[colors.primary]
+background = "#000000"
+foreground = "#B3B1AD"
+
+[font]
+size = 14
+
+[font.bold]
+family = "Iosevka Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "Iosevka Nerd Font"
+style = "Bold Italic"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Iosevka Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "Iosevka Nerd Font"
+style = "Medium"
+
+[font.offset]
+x = 0
+y = 0
 [terminal]
 
 [window.dimensions]
