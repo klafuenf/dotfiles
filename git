@@ -42,6 +42,7 @@
 
 [alias]
   changes = "log -M -L"
+  lg = "log --all --decorate --oneline --graph"
 
 [push]
   default = simple
