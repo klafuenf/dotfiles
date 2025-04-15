@@ -21,6 +21,8 @@ return {
   "nvim-tree/nvim-web-devicons",
   "nvim-treesitter/nvim-treesitter",
   "neovim/nvim-lspconfig",
+  "imsnif/kdl.vim",
+  "kspHeller/nc.vim",
   -- "nvim-lua/plenary.nvim",
   "nvim-telescope/telescope.nvim",
 }
