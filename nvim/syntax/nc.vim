@@ -15,6 +15,8 @@ syn case ignore
 " A bunch of useful nc keywords
 syn keyword ncStatement define as def proc save displof sblof
 
+syn keyword ncStructure nck chan
+
 syn keyword ncTypeSpecifier int real bool char string axis frame
 
 syn match ncNCVar           "\$\w\+"
