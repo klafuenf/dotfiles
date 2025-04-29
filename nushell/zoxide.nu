@@ -11,16 +11,15 @@ export-env {
     $env.config?
     | default {}
     | upsert hooks { default {} }
-    | upsert hooks.env_change { default {} }
-    | upsert hooks.env_change.PWD { default [] }
+    | upsert hooks.pre_prompt { default [] }
   )
   let __zoxide_hooked = (
-    $env.config.hooks.env_change.PWD | any { try { get __zoxide_hook } catch { false } }
+    $env.config.hooks.pre_prompt | any { try { get __zoxide_hook } catch { false } }
   )
   if not $__zoxide_hooked {
-    $env.config.hooks.env_change.PWD = ($env.config.hooks.env_change.PWD | append {
+    $env.config.hooks.pre_prompt = ($env.config.hooks.pre_prompt | append {
       __zoxide_hook: true,
-      code: {|_, dir| zoxide add -- $dir}
+      code: {|| zoxide add -- $env.PWD}
     })
   }
 }
