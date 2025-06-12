@@ -17,6 +17,9 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup('plugins')
 require('lualine').setup()
 require('neoconf').setup()
+require('mason').setup()
+require('mason-lspconfig').setup()
+vim.lsp.enable('nushell')
 
 vim.cmd[[colorscheme ksp]]
 
