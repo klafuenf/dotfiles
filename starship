@@ -1,8 +1,28 @@
+format = """
+$username\
+$directory\
+$git_branch\
+$meson\
+$line_break\
+$shell\
+$character
+"""
 command_timeout=2000
 username.show_always=true
 [hostname]
-ssh_only=true
+ssh_only=false
 disabled=false
 [shell]
 disabled=false
+[git_commit]
+only_detached=false
+tag_disabled=false
+[status]
+disabled=false
+[os]
+disabled=false
+[meson]
+disabled=false
+
+
 
